@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Styling</title>
+    <style>
+       table,
+       tr,
+       td,
+       th{
+           border: 1px solid red;
+           border-collapse: collapse;
+       }
+       table{
+           width: 50%;
+           margin-left: 0 auto;
+           font-size: 1.5rem;
+       }
+       th,td{
+           padding: 10px;
+       }
+       thead tr{
+           background: green;
+           color: white;
+       }
+       tbody tr{
+           text-align: center;
+       }
+       tbody tr:nth-child(even){
+           background: yellow;
+       }
+       tbody tr:hover{
+           color: violet;
+       }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Departman</th>
+                <th>Maaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mustafa</td>
+                <td>Bilişim</td>
+                <td>4000</td>
+            </tr>
+        </tbody>
+        
+        <tbody>
+            <tr>
+                <td>Mustafa</td>
+                <td>Bilişim</td>
+                <td>4000</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Mustafa</td>
+                <td>Bilişim</td>
+                <td>4000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
